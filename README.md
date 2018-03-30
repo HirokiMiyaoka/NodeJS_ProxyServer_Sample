@@ -13,11 +13,11 @@ npm run start
 ## サーバー情報
 
 * from リクエストを受け取るこのプロキシサーバーの情報
-    * host ホスト名 or IPアドレス
-    * port ポート番号
+  * host ホスト名 or IPアドレス
+  * port ポート番号
 * to fromできたリクエストの書き換え情報
-    * host ホスト名 or IPアドレス
-    * port ポート番号
+  * host ホスト名 or IPアドレス
+  * port ポート番号
 
 ## 設定
 
