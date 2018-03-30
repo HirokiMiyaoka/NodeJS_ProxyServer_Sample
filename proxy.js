@@ -10,8 +10,8 @@ function ProxyServerStart( settings )
 	{
 		const options =
 		{
-			host: settings.newHost,
-			port: settings.port,
+			host: settings.to.host,
+			port: settings.to.port,
 			path: request.url,
 			method: request.method,
 			headers: request.headers,
@@ -42,8 +42,8 @@ function ProxyServerStart( settings )
 		request.on( 'end', () => { hreq.end(); } );
 	} );
 
-	console.log( settings.host + ( settings.port === 80 ?  '' : ':' + settings.port ) );
-	server.listen( settings.port, settings.host );
+	console.log( settings.host + ( settings.from.port === 80 ?  '' : ':' + settings.from.port ) );
+	server.listen( settings.from.port, settings.from.host );
 }
 
 console.log( settings );
