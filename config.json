@@ -1,1 +1,1 @@
-{ "from":{ "host": "localhost", port: 8080 }, "to": { "host": "192.168.99.100", "port": 9080 } }
+{ "from":{ "host": "localhost", "port": 8080 }, "to": { "host": "192.168.99.100", "port": 9080 } }
