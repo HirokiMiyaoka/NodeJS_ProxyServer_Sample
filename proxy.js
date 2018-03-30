@@ -18,7 +18,7 @@ function ProxyServerStart( settings )
 		};
 		delete options.headers[ 'host' ];
 		delete options.headers[ 'accept-encoding' ];
-		const urlbase = 'http://' + options.host;
+
 		const hreq = http.request( options, ( res ) =>
 		{
 			const buftrans = new stream.Transform( { transform( chunk, encoding, callback ) { callback( null, chunk ); } } );
